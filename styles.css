@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6331b4;         /* Very light yellow */
+}
+
+/* Header Styling */
+
+header {
+    background-color: #6331b4;
+    color: rgb(255, 255, 255);
+    padding-top: 20px; /* Adjust this value to add space above the content */
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: bold;
+    padding-left: 75px;       /* Adjust the value to move it more or less */
+    
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: -75px;                      /* Moves the button container to the left */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ffc8;
+    color: white;
+    border: 2px solid black;          /* This line adds the thin black border */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #ffc06e;
+    border-color: #cc7a00;            /* Optional: Change border color on hover */
+    border-radius: 10px;
+}
+
+button.active {
+    background-color: #ff0062;
+    border-color: #660066;           /* Optional: Change border color when active */
+    border: 2px solid rgb(173, 173, 173);          /* This line adds the thin black border */
+}
+
+/* Info Box Styling */
+.infoBox {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blueBox {
+    display: flex;
+    background-color: #f1b8c5;    /* Mid blue color */
+    padding: 20px;
+    padding-top: 10px;                      /* Adds space inside the box at the top */
+    border-radius: 10px;
+    width: 90%;
+    border: 2px solid rgb(143, 143, 143); /* Thin black border */
+}
+
+
+
+.blueBox img {
+    max-width: 1000px;             /* Adjust image size */
+    max-height: 800px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.text {
+    color: #000000;           /* White text */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.text h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
